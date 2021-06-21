@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mobileNav{
+    display: none;
+}
+body{
+    display: flex;
+    width: 100%;
+}
+.left{
+    width: 23%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.left ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left li{
+    list-style: none;
+    width: 70%;
+    height: 50px;
+    font-size: 23px;
+    
+}
+.left li .fa-feather-alt{
+    display: none;
+}
+.left ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.left li i{
+    float: left;
+    margin-right: 25px;
+}
+.left li button{
+    width: 100%;
+    height: 100%;
+    background-color: #15AC59;
+    border: none;
+    border-radius: 40px;
+    color: white;
+}
+.left li:nth-child(1){
+    float: left;
+}
+.left img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.left .profile{
+    display: flex;
+    width: 70%;
+}
+.left .profile .name{
+    display: flex;
+    width: 70%;
+}
+.left .profile i{
+    float: right;
+}
+.middle{
+    width: 600px;
+    border: 1px solid rgb(221, 221, 221);
+}
+.middle .cover_photo img{
+    width: 100%;
+}
+.middle .name{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.middle .name i{
+    margin-right: 30px;
+    margin-left: 25px;
+}
+.middle .profile_information{
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.middle .profile_information .profile_photo img{
+    height: 150px;
+    width: auto;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: -70px;
+}
+.middle .profile_information .profile_photo button{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    border: 1px solid #15AC59;
+    color: #15AC59;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+.middle .profile_information .a{
+    position: relative;
+    left: 10px;
+    top: -70px;
+}
+.middle .profile_information{
+    height: 520px;
+}
+.middle .profile_information .information a{
+    text-decoration: none;
+    color: #15AC59;
+}
+.middle .profile_information .locationAndJoin{
+    display: flex;
+    margin: 15px 0 15px 0;
+}
+.middle .profile_information .locationAndJoin p{
+    margin: 0px 15px 0 5px;
+}
+.middle .profile_information .buttons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.middle .profile_information .buttons button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #15AC59;
+}
+.middle .profile_information .buttons button{
+    width: 130px;
+}
+.middle .profile_information .buttons button:nth-child(2){
+    width: 220px;
+}
+.middle .activity {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-top: 10px;
+}
+.middle .activity img{
+    display: inline;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.middle .activity .other{
+    margin-left: 10px;
+}
+.middle .activity .name_history_more{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+.middle .activity .name_history_more i{
+    float: right;
+}
+.middle .activity .interaction{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+.right{
+    height: 100vh;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right .input{
+    margin:10px 0 10px 0;
+    width: 80%;
+    height: 40px;
+    background-color: #e1e4e6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+.right .input i{
+    margin: 0 10px 0 10px;
+}
+.right .input input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+.right .media{
+    width: 80%;
+    height: 200px;
+    background-image: url('./img/Media.PNG');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.right .border{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(207, 207, 207);
+    margin: 15px 0 20px 0;
+    border-radius: 20px;
+}
+.right .maybeLike{
+    border-radius: 20px;
+    background-color: #F7F9FA;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right .maybeLike .suggest{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.right .maybeLike .suggest:nth-child(5){
+    border-bottom: none;
+}
+.right .maybeLike .suggest a{
+    color: #15AC59;
+    text-decoration: none;
+}
+.right .maybeLike .suggest img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.right .maybeLike .suggest .name{
+    width: 55%;
+    margin-left: 10px;
+}
+.right .maybeLike h2{
+    margin: 10px 0px 10px 10px;
+}
+.right .maybeLike .suggest button{
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid #15AC59;
+    color: #15AC59;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 30px;
+}
+.messages{
+    width: 300px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: none;
+    position:fixed;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #15AC59;
+}
+.messages h2{
+    color: black;
+    margin:0 150px 0 10px;
+}
+@media(max-width:1259px){
+    .left ul li p{
+        display: none;
+    }
+    .left ul li i{
+        float: right;
+    }
+    .left{
+        width: 10%;
+    }
+    .left ul li .fa-feather-alt{
+        display: inline;
+    }
+    .left ul li button{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .left .profile div{
+        display: none;
+    }
+    .left .profile i{
+        display: none;
+    }
+    .messages{
+        display: none;
+    }
+}
+
+@media(max-width:1005px){
+    .right{
+        display: none;
+    }
+    .left{
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left ul li{
+        float: right;
+    }
+    .left .profile img{
+        width: 30px;
+        height: 30px;
+    }
+    .middle{
+        width: 500px;
+    }
+}
+@media (max-width:490px){
+    .left{
+        display: none;
+    }
+    .mobileNav{
+        font-size: 30px;
+        color: grey;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position:fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 75px;
+        background-color: white;
+        border-top: 1px solid grey;
+    }
+}
